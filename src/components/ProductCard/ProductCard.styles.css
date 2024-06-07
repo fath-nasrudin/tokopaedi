@@ -1,0 +1,31 @@
+.card {
+  padding: var(--spacing-4);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: var(--bd-rad-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__primary-action {
+  cursor: pointer;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__media {
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.card__media--square {
+  aspect-ratio: 1 / 1;
+}
+
+.card__media--16-9 {
+  aspect-ratio: 16/9;
+}
