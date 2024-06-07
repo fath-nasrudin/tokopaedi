@@ -94,11 +94,17 @@ function Cart() {
   return (
     <div className="cart-container">
       <div >Cart</div>
-      <div>{cartItems}
-      </div>
-      <div>Total Products: {totalProductsInCart}</div>
-      <div>Total Item {totalItemsInCart}</div>
-      <div>Final Price  {`Rp${grandPrize.toLocaleString('ID-id')}`}</div>
+      {totalProductsInCart <= 0 ? 
+        <p className="text-neutral-400">Yeay, there are no items in the cart.</p> :
+        <>
+          <div>{cartItems}</div>
+          <div className="flex justify-between">
+            <div>Total Products: <span className="text-neutral-400">{totalProductsInCart}</span></div>
+            <div>Total Item: <span className="text-neutral-400">{totalItemsInCart}</span></div>
+          </div>
+          <div>Final Price  {`Rp${grandPrize.toLocaleString('ID-id')}`}</div>
+        </>
+      }
     </div>
   )
 }
