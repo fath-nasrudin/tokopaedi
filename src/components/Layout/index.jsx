@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Header from "../Header";
+import "./style.css"
 
 function Layout() {
   const [products, setProducts] = useState(null);
@@ -36,8 +37,8 @@ function Layout() {
   }
 
   return (
-    <>
-      <Header>
+      <div className="layout">
+        <Header>
         <Link to="/"><div className="fs-800 fw-700">Tokopaedi</div></Link>
         
           <button className="cart-icon align-center" onClick={handleToggleCart}>
@@ -53,7 +54,7 @@ function Layout() {
         error ? errorComponent :
         <Outlet context={{products, cart, isOpen, setCart}} />
       }
-    </>
+    </div>
   )
 }
 
