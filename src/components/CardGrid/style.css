@@ -3,4 +3,7 @@
   column-gap: var(--spacing-4);
   row-gap: var(--spacing-8);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: min(100%, 66vw);
+  padding-inline: 16px;
+  padding-block: 32px;
 }
