@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Header from "../Header";
@@ -42,7 +43,7 @@ function Layout() {
         <Link to="/"><div className="fs-800 fw-700">Tokopaedi</div></Link>
         
           <button className="cart-icon align-center" onClick={handleToggleCart}>
-            Cart
+            <FaShoppingCart />
             {totalProductsInCart > 0 && (
             <div className="cart-icon__number">{totalProductsInCart}</div>
           )}
