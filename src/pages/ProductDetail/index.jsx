@@ -32,7 +32,14 @@ function ProductDetail() {
   const {image, title, description, price, rating} = product;
   return (
     <>
-      <div style={{display: 'grid', placeContent: 'center'}}>
+      <div style={{
+        display: 'grid', 
+        width: '100%',
+        justifyContent: 'center',
+        alignContent: 'start',
+        minHeight: '80vh',
+        paddingBlock: '32px',
+        }}>
         <div className="product-detail">
         <div 
           style={{backgroundImage: `url(${image})`}} className="product-detail__media">
