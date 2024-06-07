@@ -94,6 +94,10 @@ body {
   display: block;
 }
 
+.text-neutral-400 {
+  color: rgba(88, 82, 82, 0.989);
+}
+
 .text-neutral-500 {
   color: rgba(41, 39, 39, 0.989);
 }
