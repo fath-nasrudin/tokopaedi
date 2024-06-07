@@ -1,10 +1,12 @@
 .card {
   padding: var(--spacing-4);
+  background-color: hsl(0, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: var(--bd-rad-xs);
   display: flex;
   flex-direction: column;
   gap: 16px;
+  height: 100%;
 }
 
 .card__primary-action {
@@ -18,7 +20,9 @@
 }
 
 .card__media {
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   aspect-ratio: 1 / 1;
 }
 
